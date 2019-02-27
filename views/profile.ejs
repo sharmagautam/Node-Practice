@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>index page</title>
+        <link rel="stylesheet" href="/assets/style.css" type="text/css">
+    </head>
+    <body>
+        <% include partial/nav.ejs %>
+        <h1>Profile </h1>
+        <h1>This is the profile of <%= person %></h4>
+        <p><strong>age: </strong><%= data.age%></p>
+        <p><strong>job: </strong><%= data.job%></p>
+        <h1>Hobbies</h2>
+        <ul>
+            <%data.hobbies.forEach(function(item){%>
+                <li>
+                    <%= item%>
+                </li>
+                <%})%>
+                
+            
+        </ul>
+    </body>
+</html>
