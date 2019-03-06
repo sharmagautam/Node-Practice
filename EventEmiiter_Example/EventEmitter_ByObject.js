@@ -17,7 +17,7 @@ people.forEach(function(person){
     person.on('speak',function(msg){
         console.log(person.name+ ' said: '+ msg);
     });
-})
+});
 
 james.emit('speak','helllo...');
 watson.emit('speak','bolo...');
